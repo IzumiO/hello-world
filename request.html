@@ -1,0 +1,270 @@
+<head>
+<title>Request Foodar</title>
+<link rel="icon" 
+      type="image/png" 
+      href="logo.png">
+<style>
+body {
+	font-family: courier;
+	background-color: lightblue;
+    background-repeat: no-repeat;
+	background-position: right top;
+}
+#p01 {
+    color: red;
+	margin-left: 40px;
+}
+
+.title{
+	font-weight: bold;
+}
+
+#footer_column1 {
+	float:left;
+	text-align:left;
+	width: 33%;
+}	
+#footer_column2 {
+	float:left;
+	text-align:center;
+	width: 33%;
+}
+#footer_column3 {
+	float:left;
+	text-align:right;
+	width: 33%;
+}
+#main_table1 {
+    border: 5px solid black;
+	float:left;
+	text-align:center;
+	width: 200px;
+	margin-left: 15px; 
+	<!-- margin: auto; -->
+}	
+#main_table2 {
+    border: 5px solid black;
+	float:left;
+	text-align:center;
+	width: 200px;
+	margin-left: 100px;
+	<!-- margin: auto;-->
+}
+#main_table3 {
+    border: 5px solid black;
+	float:left;
+	text-align:center;
+	width: 200px;
+	margin-left: 180px; 
+	<!-- margin: auto;-->
+}
+.floatstop {
+	clear:both;
+}	
+table, th, td {
+    border: 0px solid black;
+    border-collapse: collapse;
+	text-align:center;
+}
+th, td {
+    padding: 15px;
+}
+#div_topic{
+	padding: 15px;
+}
+
+</style>
+<script type="text/javascript" src="functions.js"></script>
+</head>
+
+<body>
+<div id="header">
+<!-- <h1 id="p01">Foodar</h1> -->
+<h1>Foodar<img src="logo.png" alt="Foodar logo" style="width:100px;height:30px;"></h1>
+</div>
+
+<div id="main">
+<h1>SUBMIT YOUR REQUEST</h1>
+<p>Please fill out the form below.</p>
+<div id="div_topic">
+<p class="title">Address:</p>
+<input type="text" name="address" size="80" value="Email">
+</div>
+
+<div id="div_topic">
+<p class="title">Choose Your Style:</p>
+<div id=footer_column1>
+<div id=main_table1>
+<table width=200 height=120>
+	<tr height=10>
+		<th>Classic</th>
+	</tr>
+	<tr height=100>
+		<td>This is a classic treatment</td>
+	</tr>
+	<tr height=10>
+		<td><input id="btn1" type="radio" name="styleChoice" value="3" checked></td>
+	</tr>
+</table>
+</div>
+</div>
+<div id=footer_column2>
+<div id=main_table2>
+<table width=200 height=120>
+	<tr height=10>
+		<th>Premium</th>
+	</tr>
+	<tr height=100>
+		<td width=200>Pinky's up</td>
+	</tr>
+	<tr height=10>
+		<td><input id="btn2" type="radio" name="styleChoice" value="5"></td>
+	</tr>
+</table>
+</div>
+</div>
+<div id=footer_column3>
+<div id=main_table3>
+<table width=200 height=120>
+	<tr height=10>
+		<th>Royal</th>
+	</tr>
+	<tr height=100>
+		<td>Your food is served on a silver platter.<br>Literally</td>
+	</tr>
+	<tr height=10>
+		<td><input id="btn3" type="radio" name="styleChoice" value="10"></td>
+	</tr>
+</table>
+</div>
+</div>
+<!-- 
+<center>
+<table width=600 height=140>
+	<tr height=10>
+		<td width=200>Classic</td>
+		<td width=200>Premium</td>
+		<td width=200>Royal</td>
+	</tr>
+	<tr height=100>
+		<td width=200>This is a classic treatment</td>
+		<td width=200>Pinky's up</td>
+		<td width=200>Your food is served on a silver platter.<br>Literally</td>
+	</tr>
+	<tr height=30>
+		<td><input type="radio" name="styleChoice" value="Classic" checked></td>
+		<td><input type="radio" name="styleChoice" value="Premium"></td>
+		<td><input type="radio" name="styleChoice" value="Royal"></td>
+	</tr>
+</table>
+</center>
+-->
+
+</div>
+<p class="floatstop"></p><br><br>
+
+<div id="div_topic">
+<p class="title">Restaurant:</p>
+<input type="text" name="restaurantName" size="60"  value="Name">
+</div>
+<div id="div_topic">
+<p class="title">Tip:</p>
+<div id=footer_column1>
+<div id=main_table1>
+<table width=200 height=120>
+	<tr height=10>
+		<th>10%</th>
+	</tr>
+	<tr height=100>
+		<td>They did their job.</td>
+	</tr>
+	<tr height=10>
+		<td><input type="radio" name="tipChoice" value="1.1" checked></td>
+	</tr>
+</table>
+</div>
+</div>
+<div id=footer_column2>
+<div id=main_table2>
+<table width=200 height=120>
+	<tr height=10>
+		<th>15%</th>
+	</tr>
+	<tr height=100>
+		<td>They made you feel special.</td>
+	</tr>
+	<tr height=10>
+		<td><input type="radio" name="tipChoice" value="1.15"></td>
+	</tr>
+</table>
+</div>
+</div>
+<div id=footer_column3>
+<div id=main_table3>
+<table width=200 height=120>
+	<tr height=10>
+		<th width=200>20%</th>
+	</tr>
+	<tr height=100>
+		<td width=200>I wanna give them more, but this is all I have!</td>
+	</tr>
+	<tr height=10>
+		<td><input type="radio" name="tipChoice" value="1.2"></td>
+	</tr>
+</table>
+</div>
+</div>
+<!--
+<center>
+<table width=600 height=140>
+	<tr height=10>
+		<td width=200>10%</td>
+		<td width=200>15%</td>
+		<td width=200>20%</td>
+	</tr>
+	<tr height=120>
+		<td width=200>They did their job.</td>
+		<td width=200>They made you feel special.</td>
+		<td width=200>I wanna give them more, but this is all I have!</td>
+	</tr>
+	<tr height=30>
+		<td><input type="radio" name="tipChoice" value="10%" checked></td>
+		<td><input type="radio" name="tipChoice" value="15%"></td>
+		<td><input type="radio" name="tipChoice" value="20%"></td>
+	</tr>
+</table>
+</center>
+-->
+</div>
+
+<p class="floatstop"></p><br><br>
+<p id="total" align="center"><b>Total: $0</b></p>
+<p align="center"><input type="submit" value="REQUEST" onclick="totalFunction()"></p>
+</div>
+
+<hr>
+
+<div id="footer">
+<div id=footer_column1>
+<ul style="list-style-type:none">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="register2.html">Register</a></li>
+  <li><a href="about.html">How it all works</a></li>
+</ul> 
+</div>
+<div id=footer_column2>
+<ul style="list-style-type:none">
+  <li><a href="index.html">Privacy Policy</a></li>
+  <li><a href="index.html">Terms & Conditions</a></li>
+</ul> 
+</div>
+<div id=footer_column3>
+<ul style="list-style-type:none">
+  <li><a href="index.html">Lucky you:)</a></li>
+</ul> 
+</div>
+<p class="floatstop" align="center">Izumi Oka &copy; Copyright 2016</p>
+</div>
+</body>
+
+</html>

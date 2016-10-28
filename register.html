@@ -1,0 +1,195 @@
+<head>
+<title>Register Foodar</title>
+<link rel="icon" 
+      type="image/png" 
+      href="logo.png">
+<style>
+body {
+	font-family: courier;
+	background-color: lightblue;
+    background-repeat: no-repeat;
+	background-position: right top;
+}
+#p01 {
+    color: red;
+	margin-left: 40px;
+}
+.red{
+    color: red;
+	text-align: left;
+	font-size: 35px;
+	font-weight: bold;
+}
+.green{
+    color: green;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.outer-div{
+	margin: 0 0 0 15px;
+}
+
+.inner-div{
+	margin: 0 0 0 40px;
+}
+
+input{
+	vertical-align: text-top;
+}
+
+label{
+	padding: 20px;
+}
+
+footer{
+	text-align: center;
+	color: white;
+}
+
+#header,
+#main,
+#sidebar,
+#footer {
+		display:inline;
+        position:relative;
+        float:left;
+		border-style: solid;
+		border-width: 1px;
+		border-color: lightblue;
+		padding-left: 5px;
+}
+
+#header,
+#footer {
+        width:100%;
+        height:60px;
+}
+
+#header {
+        margin-bottom:2%;
+}
+
+#footer {
+        margin-top:10%;
+		text-align: center;
+}
+
+#main {
+        width:65%;
+        height:50%;
+        margin-right:2%;
+}
+#sidebar {
+        width:30%;
+        height:50%;
+}
+
+#footer_column1 {
+	float:left;
+	text-align:left;
+	width: 33%;
+}	
+#footer_column2 {
+	float:left;
+	text-align:center;
+	width: 33%;
+}
+#footer_column3 {
+	float:left;
+	text-align:right;
+	width: 33%;
+}
+.floatstop {
+	clear:both;
+}
+
+</style>
+</head>
+
+<body>
+<div id="header">
+<h1>Foodar<img src="logo.png" alt="Foodar logo" style="width:100px;height:30px;"></h1>
+</div>
+
+<div id="main">
+<h1>Register</h1>
+<b>Please fill out the form below:</b><br><br>
+
+<form name="MyWebForm" method="post">
+  <div class="outer-div">
+    <fieldset class="field1">
+		<legend>Details:</legend>
+		<div class="inner-div">
+			<label>Email:
+			<input type="email" name="email"></label><br>
+			<label>Password:
+			<input type="password" name="password"></label><br>
+			<label>First Name:
+			<input id="firstName" name="firstName"></label><br>
+			<label>Last Name:
+			<input id="lastName" name="lastName"></label>
+		</div>
+	</fieldset>
+  </div><br>
+  
+  <div class="outer-div">
+    <fieldset class="field2">
+	<legend>Address:</legend>
+		<div class="inner-div">
+			<label for="address">Address:
+			<input type="text" name="address"></label><br>
+			<label for="street">Street:
+			<input type="text" name="street"></label><br>
+			<label for="city">City:
+			<select name="city">
+				<option value="KS">KS</option>
+				<option value="MO">MO</option>
+				<option value="NY">NY</option>
+			</select></label><br>
+			<label for="zipcode">Zipcode:
+			<input type="text" name="zipcode" value=""></label>
+		</div>	
+	</fieldset>
+  </div><br>
+  
+  <input type="submit" value="Register">
+</form> 
+</div>
+
+<div id="sideBar">
+<h1>Link</h1>
+<ul>
+  <li>About Foodar</li>
+  <li>Register</li>
+  <li>Order</li>
+  <li>Contact</li>
+</ul>
+</div>
+
+<div id="footer">
+<hr>
+<div id=footer_column1>
+<ul style="list-style-type:none">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="register2.html">Register</a></li>
+  <li><a href="about.html">How it all works</a></li>
+</ul> 
+</div>
+<div id=footer_column2>
+<ul style="list-style-type:none">
+  <li><a href="index.html">Privacy Policy</a></li>
+  <li><a href="index.html">Terms & Conditions</a></li>
+</ul> 
+</div>
+<div id=footer_column3>
+<ul style="list-style-type:none">
+  <li><a href="index.html">Lucky you:)</a></li>
+</ul> 
+</div>
+<p class="floatstop" align="center">Izumi Oka &copy; Copyright 2016</p>
+</div>
+</div>
+</body>
+
+</html>
